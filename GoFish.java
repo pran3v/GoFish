@@ -6,22 +6,27 @@ public class GoFish
 
     public static void main(String[]args)
     {
-        boolean reStart = true;
-        int menu;
-        do
-        {
-            System.out.println("\n1) Test Deck Hand Class\n 2) Play Go Fish\n 3) Exit");
-            menu = userData.nextInt();
-            if(menu == 1) 
-            	testDecks();
-            else if(menu == 2) {
-            	new GoFishHand();
-            }
-            else if(menu == 3)
-            	reStart = false;
-
-        }while(reStart);
-        System.out.println("Exiting!");
+    	Card c= new Card(1,1);
+		System.out.print(c.getSuit());
+		System.out.print(c.getValue());
+		Deck d= new Deck();
+		System.out.print(d.checkBookBegginingDeal());
+//        boolean reStart = true;
+//        int menu;
+//        do
+//        {
+//            System.out.println("\n1) Test Deck Hand Class\n 2) Play Go Fish\n 3) Exit");
+//            menu = userData.nextInt();
+//            if(menu == 1) 
+//            	testDecks();
+//            else if(menu == 2) {
+//            	new GoFishHand();
+//            }
+//            else if(menu == 3)
+//            	reStart = false;
+//
+//        }while(reStart);
+//        System.out.println("Exiting!");
     }
 
 
